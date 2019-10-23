@@ -1,6 +1,6 @@
 #chat-space DB設計
 
-##usersテーブル
+## usersテーブル
 |Column|Type|options|
 |------|----|-------|
 |name|string|null: false|
@@ -11,7 +11,7 @@
 - has_many :users_groups
 - has_many :groups, through: :users_groups
 
-##groupsテーブル
+## groupsテーブル
 |Column|Type|options|
 |------|----|-------|
 |name|string|null: false|
