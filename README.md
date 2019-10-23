@@ -1,4 +1,4 @@
-# chat-space DB設計
+# chat-space データベース設計
 
 ## usersテーブル
 |Column|Type|options|
