@@ -55,8 +55,15 @@
      .low-message__content  
       メッセージ   
   .form
-   .form__message
-    text
-   .form__image
-   .send-button
-    send               
+   %form.new-message
+    .input-box
+     %input.content{:placeholder => "text"}
+      %label.image
+       = fa_icon 'image', class: 'icon'
+
+       %input.hidden{type: 'file'}
+    
+    
+    %input.send{type: 'submit', value: 'Send'}
+
+                   
