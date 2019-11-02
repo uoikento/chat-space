@@ -1,0 +1,50 @@
+.wrapper {
+ height: 100%;
+ display: flex;
+ .side-bar {
+  color: #FFFFFF;
+  width: 300px;
+  .header {
+   background-color: #253141;
+   height: 100px;
+   line-height: 100px;
+   padding: 0 20px;
+   display: flex;
+
+   &__user {
+    font-size: 16px;
+    font-weight: bold;
+   }
+
+   &__lists {
+    margin-left: auto;
+    .list {
+    display: inline;
+    }
+    .icon {
+    display: inline;
+    color: #FFFFFF;
+    font-size: 16px;
+    }
+   }
+  }
+   .groups {
+    background-color: #253141;
+    height: calc(100vh - 100px);
+    padding: 20px 20px;
+    .group {
+     padding-bottom: 40px;
+      &__name {
+        padding-bottom: 5px;
+        font-size: 15px;
+      }
+      &__message {
+        font-size: 11px;
+      }
+    }
+  }
+ }
+ .chat {
+  width: calc(100% - 300px);
+  }
+}
