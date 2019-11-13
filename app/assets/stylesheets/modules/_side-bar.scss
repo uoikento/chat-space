@@ -25,20 +25,22 @@
     }
    }
   }
-   .groups {
+  .groups {
     background-color: #2f3e51;
     height: calc(100% - 100px);
     padding: 20px 20px 0 20px;
     .group {
      box-sizing: border-box;
      padding-bottom: 40px;
-      &__name {
-        padding-bottom: 5px;
-        font-size: 15px;
-      }
-      &__message {
-        font-size: 11px;
-      }
+     &__name {
+      color: #FFFFFF;
+      padding-bottom: 5px;
+      font-size: 15px;
+     }
+     &__message {
+      color: #FFFFFF;
+      font-size: 11px;
+     }
     }
   }
  }
