@@ -62,9 +62,9 @@ $(function () {
           $('form')[0].reset();
         })
         .fail(function () {
-          console.log('error');
+          alert('error');
         });
     }
   };
-  setInterval(reloadMessages, 7000);
+  setInterval(reloadMessages, 5000);
 });
