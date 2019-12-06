@@ -1,12 +1,4 @@
-server '52.199.254.34',
-   user: "uoikento",
-   roles: %w{web db app},
-   ssh_options: {
-       port: 22022,
-       user: "uoikento", # overrides user setting above
-       keys: %w(~/.ssh/f-chatspace.pem),
-       forward_agent: true
-   }
+server '52.68.207.37', user: 'ec2-user', roles: %w{app db web}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
