@@ -22,14 +22,13 @@
      } 
    }
    .right-header {
-    border: solid 3px  #38AEF0;
+    border: solid 1px  #38AEF0;
      height: 40px;
      margin-top: 28px;
      padding: 0 20px;
      margin-left: auto;
      &__button {
-      line-height: 40px;
-      color: #38AEF0;
+       line-height: 40px;
      }
    }
   }
@@ -101,4 +100,8 @@
     }
    } 
   }
+ }
+ a:-webkit-any-link {
+   color: #38AEF0;
+   text-decoration-line: none;
  }

@@ -17,8 +17,8 @@
       = form_for [@group, @message] do |f|
          .new-text
             .input-box
-               = f.text_field :content, class: 'content', placeholder: "text"
+               = f.text_field :content, class: 'content', placeholder: "type a message"
                = f.label :image, class: 'image' do
                   = fa_icon 'image', class: 'icon'
                   = f.file_field :image, class: 'hidden'
-            = f.submit '送信', class: "send"
+            = f.submit 'Send', class: "send"
