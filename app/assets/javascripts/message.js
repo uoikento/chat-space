@@ -2,13 +2,13 @@ $(function () {
   function buildHTML(message) {
     image = ( message.image ) ? `<img class= "low-message__image" src=${message.image} >` : "";
       var html =
-      `<div class="message" data-message_id= "${message.id}" > 
+      `<div class="message" data-message-id= "${message.id}" > 
         <div class="up-message"> 
           <div class="up-message__user-name"> 
             ${message.user_name} 
           </div> 
           <div class="up-message__date"> 
-            ${message.created_at} 
+            ${message.date} 
           </div> 
         </div> 
         <div class="low-message"> 
@@ -45,12 +45,12 @@ $(function () {
   });
   var reloadMessages = function () {
     if (window.location.href.match(/\/groups\/\d+\/messages/)) {
-      last_message_id = $('.message:last').data("message-id");
+      var last_message_id = $('.message:last').data("message-id");
       $.ajax({
         url: "api/messages",
         type: 'get',
         dataType: 'json',
-        formData: { id: last_message_id }
+        data: { id: last_message_id }
       })
         .done(function (messages) {
           var insertHTML = '';
@@ -59,7 +59,6 @@ $(function () {
           })
           $('.messages').append(insertHTML);
           $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight }, 'fast');
-          $('form')[0].reset();
         })
         .fail(function () {
           alert('error');
